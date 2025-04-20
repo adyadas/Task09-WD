@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colorful Info Boxes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #e0f7fa, #fff3e0);
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      flex: 1;
+      min-width: 260px;
+      border-radius: 16px;
+      padding: 25px;
+      color: #fff;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+      transition: all 0.3s ease;
+      background-size: 150% 150%;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
+    .box img {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 15px;
+    }
+
+    .box h2 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .box p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #fdfdfd;
+    }
+
+    /* Individual Stylish Boxes */
+    .home {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+    }
+
+    .about {
+      background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    }
+
+    .gallery {
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    }
+
+    .contact {
+      background: linear-gradient(135deg, #f7971e, #ffd200);
+      color: #333;
+    }
+
+    .contact h2 {
+      color: #222;
+    }
+
+    .contact p {
+      color: #333;
+    }
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Home -->
+    <div class="box home">
+      <img src="https://img.icons8.com/color/96/home--v1.png" alt="Home Icon">
+      <h2>Home</h2>
+      <p>Welcome to our vibrant space! Discover updates, highlights, and what's new at a glance right from our homepage.</p>
+    </div>
+
+    <!-- About -->
+    <div class="box about">
+      <img src="https://img.icons8.com/color/96/info--v1.png" alt="About Icon">
+      <h2>About</h2>
+      <p>We’re creative minds building meaningful digital solutions. Learn about our story, mission, and what drives us forward.</p>
+    </div>
+
+    <!-- Gallery -->
+    <div class="box gallery">
+      <img src="https://img.icons8.com/color/96/picture.png" alt="Gallery Icon">
+      <h2>Gallery</h2>
+      <p>Take a visual journey through our projects, achievements, and the moments that define us. Beautiful memories await!</p>
+    </div>
+
+    <!-- Contact -->
+    <div class="box contact">
+      <img src="https://img.icons8.com/color/96/phone.png" alt="Contact Icon">
+      <h2>Contact</h2>
+      <p>Let’s talk! Whether it's feedback, queries, or collaborations — reach out and we’ll get back to you in no time.</p>
+    </div>
+  </div>
+
+</body>
+</html>
